@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--custom css link-->
+  <link rel="stylesheet" href="contactus.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!--header starts-->
+  <header class="bg-dark text-white text-center py-4">
+    <h1>Contact</h1>
+  </header>
+  <!--header ends-->
+  <main class="container mt-4">
+    <!--contact form-->
+    <div class="row">
+      <section class="col-md-6">
+        <h2 class="mb-4">Get in Touch</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+      <!--contact information-->
+      <section class="row-cols-1">
+        <h2 class="mb-4">Contact Information</h2>
+        <ul class="list-unstyled">
+          <li><strong>Address:</strong> 123 Main Street,Rome,Italy</li>
+          <li><strong>Email:</strong> savewildlife@email.com</li>
+          <li><strong>Phone:</strong> +1234567890</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <!--footer starts-->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2023 YourCompany. All rights reserved.</p>
+  </footer>
+  <!--footer ends-->
+</body>
+</html>

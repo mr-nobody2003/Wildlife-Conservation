@@ -1,0 +1,28 @@
+.body{
+background-image: url(bg_img.avif);
+background-size: cover;
+}
+h1{
+  color: rgb(0, 2, 2);
+  text-align: center;
+}
+/* style for text */
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  color: #666;
+}
+/* setting size of images */
+.card-img-top{
+  height: 200px;
+  width: 350px;
+}
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);/* shadow of box appears on hovering*/
+  transition: box-shadow 0.3s ease-in-out;
+}
+ 
