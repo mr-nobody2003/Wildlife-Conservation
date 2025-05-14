@@ -29,9 +29,3 @@ A web-based project designed to raise awareness and educate users about the impo
 - Open-source web development communities
 - Free image and data sources used for educational purposes
 
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
