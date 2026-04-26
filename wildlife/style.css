@@ -1,0 +1,165 @@
+/* resetting default styles */
+*{
+  font-family: 'Roboto',sans-serif;
+  margin: 0;padding: 0; 
+  box-sizing: border-box;
+  outline: none;border: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+  text-decoration: none;
+}
+/* scroll bar */
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: #fff;
+  border-radius: 5rem;
+}
+body{
+  background: #010103;
+}
+/* Basic styling for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(47, 234, 18);
+}
+/* Additional styling for the logo */
+.logo img {
+  height: 100px;
+  width: 100%;
+  margin-right: 10PX;
+}
+/* style for navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Align to the height of the header */
+}
+/* Additional styling for navbar links */
+.navbar a {
+  margin: 10px 10px;
+  vertical-align: middle;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(9, 1, 17);
+}
+/* styling when curson hover on link */
+.navbar a:hover{
+  color: red;
+  border: 2px solid white;
+  padding: 5px;
+}
+/* style for search */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+#search-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+/* style for search button */
+button {
+  height: 50px;
+  width: 5rem;
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#search-box{
+height: 50px;
+width: 400px;
+}
+/* Adjust padding or margin to create space */
+.container {
+  padding-top: 50px; 
+}
+/* carousel */
+#mycarousel {
+  position: relative;
+  z-index: 1; /* Ensure a lower z-index than the header */ 
+}
+/* events section style */
+.events{
+  color: blanchedalmond;
+}
+.container1{
+  padding-top: 1.5rem;
+}
+.image{
+  height: 250px;
+  width: 500px;
+  border-radius: 4px;
+}
+.events{
+    color: #fff;
+}
+/*css for sign up container*/
+.signup-container {
+  color: aliceblue;
+  margin-top: 2.2rem;
+  margin-bottom: 5%;
+  margin-left: 25%;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url(bgimg1.jpg); 
+  background-size: cover;}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  font-weight: bold;
+}
+input[type="text"],input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.reg {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 100px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.reg:hover {
+  background-color: #0056b3;
+}
+/* footer styling */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}

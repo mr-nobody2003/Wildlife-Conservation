@@ -29,3 +29,24 @@ A web-based project designed to raise awareness and educate users about the impo
 - Open-source web development communities
 - Free image and data sources used for educational purposes
 
+---
+
+## 📌 Future Improvements
+- Add backend for donation processing
+- User authentication system
+- Integration with wildlife conservation APIs
+
+---
+
+## 🚀 How to Run Locally
+1. Clone the repository:
+```
+git clone https://github.com/mr-nobody2003/Wildlife-Conservation.git
+```
+2. Open the folder
+3. Run `index.html` in your browser
+
+----
+
+🌐 Live Demo
+👉 
