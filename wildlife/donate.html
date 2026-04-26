@@ -2,60 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Charity Donation Registration</title>
-  <!-- Bootstrap CSS -->
+  <title>Donate</title>
+
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap JS and jQuery-->
+
+  <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+<main>
+  <div class="container my-5 donate-box">
+
+    <form id="donationForm">
+      <h2 align="center">"Be Kind To Every Kind Not Just Human Kind"</h2>
+      <h3 class="text-center mb-4">Donate!</h3>
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Donation Amount ($)</label>
+        <input type="number" class="form-control" id="amount" required>
+      </div>
+
+      <div class="form-group">
+        <label>Payment Method</label>
+        <select class="form-control" id="payment">
+          <option>Credit Card</option>
+          <option>UPI</option>
+          <option>PayPal</option>
+        </select>
+      </div>
+
+      <div class="form-group text-center">
+        <label>UPI QR</label><br>
+        <img src="images/upi.png" class="upi-img">
+      </div>
+
+      <button type="submit" class="btn btn-success btn-block">Donate Now</button>
+    </form>
+
+  </div>
+</main>
+
+<div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content text-center p-4">
+      <h3>🎉 Thank You!</h3>
+      <p>Your donation was successful.</p>
+      <button class="btn btn-success" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-4">
+  <p>&copy; 2024 Wildlife Guardians Foundation</p>
+</footer>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- <link rel="stylesheet" href="donate.css">
-</head>
-<body>
-<main>
-  <!--donation form-->
-<div class="container my-5">
-  <form action="submit_donation.php" method="post">
-    <h2 class="mb-4">"Be Kind To Every Kind Not Just Human Kind"</h2>
-    <h2>Donate!</h2>
-    <div class="form-group">
-      <label for="fullname">Full Name</label>
-      <input type="text" class="form-control" id="fullname" name="fullname" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="amount">Donation Amount ($)</label>
-      <input type="number" class="form-control" id="amount" name="amount" required>
-    </div>
-    <div class="form-group">
-      <label for="payment">Payment Method</label>
-      <select class="form-control" id="payment" name="payment" required>
-        <option value="credit">Credit Card</option>
-        <option value="paypal">PayPal</option>
-        <option value="bank">Bank Transfer</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="amount">Pay Through UPI</label>
-      <img src="images/upi.png" alt="UPI">
-    </div>
-    <div class="form-group">
-      <label for="message">Message (Optional)</label>
-      <textarea class="form-control" id="message" name="message" rows="4"></textarea>
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary">Donate Now</button>
-    </div>
-  </form>
-</div>
-</main>
-<!--footer starts-->
-<footer class="bg-dark text-white text-center py-3 mt-4">
-  <p>&copy; 2023 YourCompany. All rights reserved.</p>
-</footer>
-<!--footer ends-->
+
+<script>
+document.getElementById("donationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let amount = document.getElementById("amount").value;
+
+  // Validation
+  if(name === "" || email === "" || amount === "") {
+    alert("Please fill all fields");
+    return;
+  }
+
+  if(amount <= 0) {
+    alert("Enter a valid donation amount");
+    return;
+  }
+
+  // Fake payment delay
+  setTimeout(() => {
+    $('#successModal').modal('show');
+    document.getElementById("donationForm").reset();
+  }, 800);
+});
+</script>
+
 </body>
 </html>

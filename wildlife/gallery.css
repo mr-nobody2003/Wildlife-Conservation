@@ -1,28 +1,72 @@
-.body{
-background-image: url(bg_img.avif);
-background-size: cover;
+/* Background with overlay */
+body {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("images/bg_img.avif") no-repeat center/cover;
+  font-family: Arial, sans-serif;
+  color: #fff;
 }
-h1{
-  color: rgb(0, 2, 2);
+
+/* Heading */
+h1 {
   text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: bold;
 }
-/* style for text */
-.card-title {
-  font-size: 1.25rem;
+
+/* Card styling */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  color: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card-text {
-  color: #666;
-}
-/* setting size of images */
-.card-img-top{
-  height: 200px;
-  width: 350px;
-}
-.mb-4 {
-  margin-bottom: 1.5rem;
-}
+
+/* Hover effect */
 .card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);/* shadow of box appears on hovering*/
-  transition: box-shadow 0.3s ease-in-out;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
- 
+
+/* Image fix */
+.card-img-top {
+  height: 220px;
+  width: 100%;
+  object-fit: cover; /* 🔥 IMPORTANT FIX */
+}
+
+/* Text */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Spacing */
+.container {
+  margin-top: 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}

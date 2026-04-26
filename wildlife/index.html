@@ -15,6 +15,7 @@
     <title>WILDLIFE GUARDIANS FOUNDATION</title>
 </head>
 <body>
+  <div id="progress-bar"></div>
 <!--header section starts-->
 <header class="header">
   <a href="#" class="logo">
@@ -203,8 +204,19 @@
   </main>
   <!--footer starts-->
   <footer class="bg-dark text-white text-center py-3 mt-4">
-    <p>&copy; 2023 YourCompany. All rights reserved.</p>
+    <p>&copy; 2024 YourCompany. All rights reserved.</p>
   </footer>
   <!--footer ends-->
+
+  <script>
+window.onscroll = function () {
+  let scrollTop = document.documentElement.scrollTop;
+  let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrolled = (scrollTop / scrollHeight) * 100;
+
+  document.getElementById("progress-bar").style.width = scrolled + "%";
+};
+</script>
+
 </body>
 </html>

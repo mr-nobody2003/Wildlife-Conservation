@@ -3,53 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact</title>
+
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!--custom css link-->
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="contactus.css">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <!--header starts-->
-  <header class="bg-dark text-white text-center py-4">
-    <h1>Contact</h1>
-  </header>
-  <!--header ends-->
-  <main class="container mt-4">
-    <!--contact form-->
-    <div class="row">
-      <section class="col-md-6">
-        <h2 class="mb-4">Get in Touch</h2>
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="fullname">Full Name</label>
-            <input type="text" class="form-control" id="fullname" name="fullname" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </section>
-      <!--contact information-->
-      <section class="row-cols-1">
-        <h2 class="mb-4">Contact Information</h2>
-        <ul class="list-unstyled">
-          <li><strong>Address:</strong> 123 Main Street,Rome,Italy</li>
-          <li><strong>Email:</strong> savewildlife@email.com</li>
-          <li><strong>Phone:</strong> +1234567890</li>
-        </ul>
-      </section>
+
+<!-- Header -->
+<header class="bg-dark text-white text-center py-4">
+  <h1>Contact</h1>
+</header>
+
+<!-- Main -->
+<main class="container mt-5">
+
+  <div class="row justify-content-center">
+
+    <!-- Contact Form -->
+    <div class="col-md-6 contact-box">
+      <h2 class="mb-4">Get in Touch</h2>
+
+      <form>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" rows="5" placeholder="Write your message..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
     </div>
-  </main>
-  <!--footer starts-->
-  <footer class="bg-dark text-white text-center py-3 mt-4">
-    <p>&copy; 2023 YourCompany. All rights reserved.</p>
-  </footer>
-  <!--footer ends-->
+
+    <!-- Contact Info -->
+    <div class="col-md-4 contact-info">
+      <h2 class="mb-4">Contact Info</h2>
+      <ul class="list-unstyled">
+        <li><strong>📍 Address:</strong> Bhubaneswar, Odisha, India</li>
+        <li><strong>📧 Email:</strong> savewildlife@gmail.com</li>
+        <li><strong>📞 Phone:</strong> +91 987651xxxx</li>
+      </ul>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p>&copy; 2024 Wildlife Guardians Foundation</p>
+</footer>
+
 </body>
 </html>
